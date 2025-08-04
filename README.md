@@ -49,21 +49,28 @@ pip install -r requirements.txt
 ## 🧠 Why Use RoboBack?
 
 - Understand which parts of a site were previously disallowed
-
 - Look for hidden directories or endpoints no longer in use
-
 - Trace the history of domain structures and crawling behavior
 
 ---
 **created by:** nakutenshi
 
 به خدا نمیدونم دارم با زندگیم چی کار میکنم
+
 حالم از این ادما بهم میخوره
+
 طرز حرف زدنشون 
+
 طرز تفکرشون
+
 طرز قضاوت کردنشون
+
 طرز رفتار کردنشون
+
 راستشون بخوای فکر میکردم همه ادمو اینجورن
+
 ولی یه دسته خاصیشون فرق داشتن
+
 ولی من مطلق به اون دسته نمیشدم
+
 میخواستم هم نمیتونستم
