@@ -1,5 +1,6 @@
 # 🤖 RoboBack
-<img src="./examples/final_RoboBack.gif">
+<img src="./examples/final_RoboBack.gif" width="620" height="420">
+
 **RoboBack** is a command-line tool that allows you to **travel back in time** and extract historical `robots.txt` files of a target domain from [archive.org (Wayback Machine)](https://web.archive.org).
 
 It can be useful for OSINT, bug bounty hunting, and understanding how a target's crawling policy evolved over time.
