@@ -70,11 +70,12 @@ def getRobotsContent(robots: list) -> None:
 
         response = requests.get(archive_url)
         if response.status_code == 200:
-            content = f"<--------------- {timestamp} ({date}) --------------->\n{response.text}\n{red}url:{reset} {url}"
+            content = f"<--------------- {timestamp} ({date}) --------------->\n{response.text}\n{blue}url:{reset} {url}"
             print(content)
 
             if args.o:
                 with open(args.o, "a") as f:
+                    content = f"<--------------- {timestamp} ({date}) --------------->\n{response.text}\nurl: {url}"
                     f.write(content + "\n")
 
             success += 1
