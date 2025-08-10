@@ -70,7 +70,7 @@ def getRobotsContent(robots: list) -> None:
 
         response = requests.get(archive_url)
         if response.status_code == 200:
-            content = f"--------------- {timestamp} ({date}) ---------------\n{response.text}"
+            content = f"<--------------- {timestamp} ({date}) --------------->\n{response.text}\n{red}url:{reset} {url}"
             print(content)
 
             if args.o:
@@ -105,6 +105,7 @@ def main():
     os.system("clear")
     banner()
 
+    print(f"<------------------ {green}Status{reset} ------------------>")
     print(f"{blue}[INFO]{reset} Target: {red}{domain}{reset}")
     
     if args.tf:
@@ -113,6 +114,7 @@ def main():
         print(f"{blue}[INFO]{reset} Saving results to: {green}{args.o}{reset}")
 
     print(f"{blue}[INFO]{reset} Sending request to {green}archive.org{reset}")
+    print(f"\n<------------------- {green}Logs{reset} ------------------->")
 
     response = requests.get("https://web.archive.org/cdx/search/cdx", params={
         "url": domain,
@@ -127,7 +129,7 @@ def main():
         robots = extractRobots(snapshots=snapshots)
 
         print(f"{blue}[INFO]{reset} {red}{len(robots)}{reset} robots.txt snapshot(s) found.")
-        print(f"{blue}[INFO]{reset} Reading each file...")
+        print(f"{blue}[INFO]{reset} Reading each file...\n")
         time.sleep(0.5)
         getRobotsContent(robots)
     else:
